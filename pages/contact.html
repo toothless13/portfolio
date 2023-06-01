@@ -8,7 +8,39 @@
             <h1>Contact Me</h1>
         </header>
         <main>
-
+            <section>
+                <p>Please use the form below if you'd like to contact me.</p>
+                <form action="/" method="post">
+                    <fieldset>
+                        <legend>Your Details</legend>
+                        <br>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name">
+                        <br>
+                        <br>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email">
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your Request</legend>
+                        <br>
+                        <label for="contact-reason">Please select your reason for contacting me: </label>
+                        <select name="contact-reason" id="contact-reason">
+                            <option value="hi">Just to say hi</option>
+                            <option value="quote">To get a quote for a project</option>
+                            <option value="project">To discuss a potential project</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="info">Please provide some details about your request: </label>
+                        <br>
+                        <br>
+                        <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                        <br>
+                    </fieldset>
+                </form>
+            </section>
         </main>
         <footer>
 
