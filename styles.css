@@ -1,0 +1,39 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    color: cornflowerblue;
+}
+
+.about-me {
+    background-color: lightpink;
+}
+
+#qualities {
+    font-size: 50px;
+}
+
+#about-me p {
+    background-color: blueviolet;
+}
+
+#about-me > p {
+    background-color: aqua;
+}
+
+#about-me > div {
+    color: white;
+}
+
+.profile-pic + p {
+    color: red;
+}
+
+.profile-pic ~ div {
+    border: 4px solid black;
+}
+
+.profile-pic ~ p {
+    border: 2px dashed darksalmon;
+}
