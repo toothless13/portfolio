@@ -2,19 +2,26 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>timCodes</title>
     </head>
     <body>
         <header>
             <!-- <a href="./index.html"><img src="" alt="timCodes logo"></a> -->
-            <h1>{timCodes;}</h1> Placeholder for logo
-            <nav>
+            <h1>{timCodes;}</h1>  <!-- for logo -->
+            <nav class="desktop" id="desktop-nav">
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+            </nav>
+            <nav class="mobile" id="mobile-nav">
+                <button class="btn" id="btn"><i class="fa fa-bars"></i></button>
             </nav>
         </header>
         <main>
@@ -60,7 +67,7 @@
             </section>
             <section class="skills">
                 <h2>Skills</h2>
-                <div>
+                <div class="skills-logos">
                     <img src="./images/logos/HTML5_Badge_64.png" alt="HTML5 logo">
                     <img src="./images/logos/CSS3_logo.svg.png" alt="CSS3 logo">
                     <img src="./images/logos/64px-JavaScript-logo.png" alt="JavaScrip logo">
@@ -73,9 +80,6 @@
 
                 <p>Please use the form below if you'd like to contact me, alternatively you can email me using <a href="mailto:timcodes13@outlook.com">timcodes13@outlook.com</a></p>
                 <form action="/" method="post">
-                    <fieldset>
-                        <legend>Your Details</legend>
-                        <br>
                         <label for="name">Name: </label>
                         <input type="text" id="name" name="name">
                         <br>
@@ -83,11 +87,10 @@
                         <label for="email">Email: </label>
                         <input type="email" id="email" name="email">
                         <br>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Your Request</legend>
                         <br>
                         <label for="contact-reason">Please select your reason for contacting me: </label>
+                        <br>
+                        <br>
                         <select name="contact-reason" id="contact-reason">
                             <option value="hi">Just to say hi</option>
                             <option value="quote">To get a quote for a project</option>
@@ -98,9 +101,7 @@
                         <label for="info">Please provide some details about your request: </label>
                         <br>
                         <br>
-                        <textarea name="info" id="info" cols="30" rows="10"></textarea>
-                        <br>
-                    </fieldset>
+                        <textarea name="info" id="info" cols="40" rows="10"></textarea>
                 </form>
             </section>
         </main>
