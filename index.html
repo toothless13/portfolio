@@ -6,7 +6,8 @@
     </head>
     <body>
         <header>
-            <a href="./index.html"><img src="" alt="timCodes logo"></a>
+            <!-- <a href="./index.html"><img src="" alt="timCodes logo"></a> -->
+            <h1>{timCodes;}</h1> Placeholder for logo
             <nav>
                 <ul>
                     <li><a href="#">About</a></li>
@@ -31,36 +32,33 @@
 
                 <img src="./images/Me 300x393px.jpg" alt="Photo of Tim">
             </section>
-            <section>
+            <section class="projects">
                 <h2>Projects</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Image</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>cli-mystery</td>
-                            <td><img src="../images/cli-mystery-img-169px.png" alt="Showing the command line for this project"></td>
-                            <td>Used the command line interface to solve a murder</td>
-                        </tr>
-                        <tr>
-                            <td>student-roster</td>
-                            <td><img src="../images/student-roster-img-169px.png" alt="Some of the GitHub page for Student Roster project"></td>
-                            <td>Used GitHub to add some information about myself to the Command Shift Student Roser</td>
-                        </tr>
-                        <tr>
-                            <td>Portfolio</td>
-                            <td><img src="../images/portfolio-img.png" alt="Part of the 'About Me' section of the portfolio website"></td>
-                            <td>Using HTML to create the basic structure of this portfolio website</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="projects project1">
+                    <img src="./images/projects/rock-paper-scissors-image-square-323px.png" alt="Showing rock, paper, scissors, lizard, spock game">
+                    <h3>Rock, Paper, Scissors, Lizard, Spock</h3>
+                    <p>This game was initially programmed using C++, and I have now converted it to HTML, CSS and JavaScript.</p>
+                    <p>I used HTML to set the general structure of the page, and then used JavaScript to dynamically create, hide and display divs based on what option was chosen by the player. I also added the 'Play Again' button that resets the computer choice. The project was styled using CSS.</p>
+                    <p>GitHub link: <a href="https://github.com/toothless13/rock-paper-scissors" target="_blank" >Rock, Paper, Scissors, Lizard, Spock</a></p>
+                    <a href="https://toothless13.github.io/rock-paper-scissors/" target="_blank">https://toothless13.github.io/rock-paper-scissors/</a>                    
+                </div>
+                <div class="projects project2">
+                    <img src="./images/projects/cli-mystery-img-169px.png" alt="Showing the command line for this project">
+                    <h3>cli-mystery</h3>
+                    <p>Used the command line interface to solve a murder</p>
+                </div>
+                <div class="projects project3">
+                    <img src="./images/projects/student-roster-img-169px.png" alt="Some of the GitHub page for Student Roster project">
+                    <h3>Student Roster</h3>
+                    <p>Used GitHub to add some information about myself to the Command Shift Student Roser</p>
+                </div>
+                <div class="projects project4">
+                    <img src="./images/projects/portfolio-img.png" alt="Part of the 'About Me' section of the portfolio website">
+                    <h3>Portfolio Website</h3>
+                    <p>Using HTML to create the basic structure of this portfolio website</p>
+                </div>
             </section>
-            <section>
+            <section class="skills">
                 <h2>Skills</h2>
                 <div>
                     <img src="./images/logos/HTML5_Badge_64.png" alt="HTML5 logo">
@@ -70,7 +68,7 @@
                     <img src="./images/logos/github-mark-white 64px high.png" alt="GitHub logo">
                 </div>
             </section>
-            <section>
+            <section class="contact">
                 <h2>Contact Me</h2>
 
                 <p>Please use the form below if you'd like to contact me, alternatively you can email me using <a href="mailto:timcodes13@outlook.com">timcodes13@outlook.com</a></p>
