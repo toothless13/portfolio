@@ -167,6 +167,11 @@ input[type=checkbox]:checked ~ nav.desktop {
 
 h2 {
     text-align: center;
+    border: 3px solid var(--rosewater);
+    transform: skew(-20deg);
+    width: 60vw;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 img {
@@ -195,6 +200,7 @@ img {
     padding: 1rem;
     background-color: var(--bluegreen);
     color: var(--champagne);
+    position: relative;
 }
 
 .projects img {
@@ -204,6 +210,13 @@ img {
 
 .projects h3 {
     text-align: center;
+}
+
+.project {
+    border: 3px solid var(--rosewater);
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 1rem;
 }
 
 .project1 img {
@@ -224,6 +237,11 @@ img {
 .skills-logos {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills-logos img {
+    margin: 1rem;
 }
 
 .contact {
