@@ -1,8 +1,25 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bluegreen: hsl(178, 79%, 40%);
+    --rosewater: hsl(357, 83%, 86%);
+    --champagne: hsl(47, 93%, 79%);
+    --cyan: hsl(174, 77%, 68%);
+}
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', Arial, sans-serif;
 }
 
 body {
@@ -24,12 +41,14 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
+    background-color: var(--bluegreen);
 }
 
 header h1 {
     margin-top: .5rem;
     margin-left: .5rem;
     margin-bottom: 0;
+    color: #E7E5A0;
 }
 
 nav ul {
@@ -45,13 +64,38 @@ nav ul {
 nav ul li {
     list-style-type: none;
     padding: 1rem 0;
-    width: 4rem;
+    width: 100vw;
     text-align: center;
+    color: var(--champagne);
+    background-color: var(--bluegreen);
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.2s ease;
 }
+
+
 
 nav ul li a {
     text-decoration: none;
     display: block;
+    color: inherit;
+}
+
+nav ul li:hover {
+    /* background-color: hsl(178, 79%, 30%); */
+    background-color: var(--rosewater);
+    cursor: pointer;
+    color: var(--bluegreen);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+nav ul li:active {
+    background-color: var(--rosewater);
+    cursor: pointer;
+    color: var(--bluegreen);
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 nav.desktop {
@@ -64,18 +108,7 @@ nav.desktop {
     visibility: hidden;
     opacity: 0;
     margin: 0 auto;
-    background-color: white;
-}
-
-button:hover + nav.desktop {
-    visibility: visible;
-    opacity: 1;
-    height: 100vh;
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: #0ABAB5;
+    background-color: var(--bluegreen);
 }
 
 input[type=checkbox] {
@@ -101,7 +134,7 @@ input[type=checkbox] + label {
       display: block;
       width: 22px;
       height: 2px;
-      background-color: #0ABAB5;
+      background-color: var(--champagne);
       margin: 4px;
       transition: all 0.2s;
     }
