@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Set main colours */
 :root {
     --bluegreen: hsl(178, 79%, 40%);
     --rosewater: hsl(357, 83%, 86%);
@@ -8,11 +9,13 @@
     --cyan: hsl(174, 77%, 68%);
 }
 
+/* Reset CSS */
 * {
     font-family: 'Open Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
 
+/* Set heading fonts */
 h1,
 h2,
 h3,
@@ -22,6 +25,7 @@ h6 {
     font-family: 'Raleway', Arial, sans-serif;
 }
 
+/* Set initial grid */
 body {
     display: grid;
     grid-template-areas: 
@@ -33,7 +37,7 @@ body {
         "footer";
     margin: 0;
 }
-
+/* Header and Nav sections */
 header {
     grid-area: header;
     display: flex;
@@ -127,7 +131,7 @@ label {
     cursor: pointer;
     margin-right: .5rem;
 }
-
+/* Styling Hamburger menu */
 input[type=checkbox] + label {
     .icon-bar {
       display: block;
@@ -177,7 +181,7 @@ h2 {
 img {
     border-radius: 10px;
 }
-
+/* About Me section */
 .about-me {
     grid-area: about;
     text-align: left;
@@ -192,7 +196,7 @@ img {
     width: 40vw;
     margin: 0 auto;
 }
-
+/* Projects section */
 .projects {
     grid-area: projects;
     text-align: left;
@@ -225,7 +229,7 @@ img {
     width: 100%;
     height: 8rem;
 }
-
+/* Skills section */
 .skills {
     grid-area: skills;
     place-self: center;
@@ -243,7 +247,7 @@ img {
 .skills-logos img {
     margin: 1rem;
 }
-
+/* Contact section */
 .contact {
     grid-area: contact;
     place-self: center;
@@ -256,7 +260,7 @@ img {
     margin-top: 2rem;
     margin: 2rem 0;
 }
-
+/* Footer section */
 footer {
     grid-area: footer;
     font-size: .5rem;
@@ -272,7 +276,7 @@ footer p {
 .socials {
     margin-right: 0.5rem;
 }
-
+/* Tablet rules */
 @media screen and (min-width:768px){
     
     .about-me img {
@@ -291,7 +295,7 @@ footer p {
         height: 10rem;
     }
 }
-
+/* Laptop rules */
 @media screen and (min-width:1024px) {
 
     .dropdown {
@@ -372,7 +376,7 @@ footer p {
         text-align: center;
     }
 }
-
+/* Computer screen rules */
 @media screen and (min-width: 1440px) {
     
     h2 {
@@ -415,11 +419,13 @@ footer p {
         font-size: 1rem;
     }
 }
-
+/* Massive screen rules */
 @media  screen and (min-width: 2560px) {
     
     h2 {
         font-size: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     h3 {
@@ -520,11 +526,17 @@ footer p {
     }
 
     .skills {
-        height: 20rem;
+        /* height: 24rem; */
+        height: 12%;
     }
 
     .skills-logos img {
         width: 10rem;
+    }
+
+    .skills-logos {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     form div {
@@ -551,6 +563,10 @@ footer p {
 
     label {
         font-size: 3rem;
+    }
+
+    footer {
+        height: 8rem;
     }
 
     footer p {
