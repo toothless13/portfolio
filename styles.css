@@ -3,10 +3,10 @@
 
 /* Set main colours */
 :root {
-    --color1: hsl(178, 79%, 40%);
-    --color2: hsl(357, 83%, 86%);
-    --color3: hsl(47, 93%, 79%);
-    --color4: hsl(174, 77%, 68%);
+    --color1: hsl(180, 4%, 18%);
+    --color2: hsl(178, 100%, 32%);
+    --color3: hsl(200, 6%, 80%);
+    --color4: hsl(315, 98%, 52%);
 }
 
 /* Reset CSS */
@@ -45,6 +45,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color1);
+    border-bottom: 3px solid var(--color4);
+    /* padding: 2rem 0; */
 }
 
 header h1 {
@@ -61,7 +63,8 @@ nav ul {
     justify-content: center;
     margin: 1rem auto;
     width: 100vw;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
+    /* padding: 0; */
 }
 
 nav ul li {
@@ -112,6 +115,7 @@ nav.desktop {
     opacity: 0;
     margin: 0 auto;
     background-color: var(--color1);
+    z-index: 2;
 }
 
 input[type=checkbox] {
@@ -187,8 +191,8 @@ img {
     text-align: left;
     place-self: center;
     padding: 1rem;
-    background-color: var(--color3);
-    color: var(--color1);
+    background-color: var(--color1);
+    color: var(--color3);
 }
 
 .about-me img {
@@ -234,8 +238,8 @@ img {
     grid-area: skills;
     place-self: center;
     padding: 1rem;
-    background-color: var(--color3);
-    color: var(--color1);
+    background-color: var(--color1);
+    color: var(--color3);
 }
 
 .skills-logos {
@@ -267,6 +271,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color1);
+    color: var(--color3);
+    border-top: 3px solid var(--color4);
 }
 
 footer p {
@@ -298,6 +305,10 @@ footer p {
 /* Laptop rules */
 @media screen and (min-width:1024px) {
 
+    header {
+        height: 5rem;
+    }
+
     .dropdown {
         display: none;
     }
@@ -313,10 +324,15 @@ footer p {
         width: auto;
         flex-direction: row;
         justify-content: flex-end;
+        height: 5rem;
     }
 
     nav ul li {
         width: 10vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .about-me {
@@ -397,6 +413,14 @@ footer p {
 
     nav.desktop a {
         font-size: 2rem;
+    }
+
+    .about-me,
+    .projects,
+    .skills,
+    .contact {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .about-me img {
