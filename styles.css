@@ -303,10 +303,23 @@ footer {
 
 footer p {
     margin-left: 0.5rem;
+    width: 40%;
 }
 
 .socials {
+    display: flex;
     margin-right: 0.5rem;
+    justify-content: flex-end;
+}
+
+.socials a {
+    display: inline-block;
+    width: 5%;
+    margin-right: 1rem;
+}
+
+.socials a img {
+    width: 100%;
 }
 
 /* 412px */
