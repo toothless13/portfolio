@@ -387,6 +387,14 @@ footer p {
         font-size: 1.5rem;
     }
 
+    header {
+        height: 5rem;
+    }
+
+    nav.desktop a {
+        font-size: 2rem;
+    }
+
     .projects a {
         font-size: 1.5rem;
     }
@@ -405,5 +413,147 @@ footer p {
 
     footer p {
         font-size: 1rem;
+    }
+}
+
+@media  screen and (min-width: 2560px) {
+    
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    header {
+        height: 8rem;
+    }
+
+    nav.desktop a {
+        font-size: 3rem;
+    }
+
+    .about-me div {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .about-me img {
+        width: 30%;
+    }
+
+    .projects {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "heading heading"
+            "project1 project2" 
+            "project1 project3"
+            "project1 project4";
+    }
+
+    .project1 {
+        grid-area: project1;
+    }
+
+    .project2 {
+        grid-area: project2;
+    }
+
+    .project3 {
+        grid-area: project3;
+    }
+
+    .project4 {
+        grid-area: project4;
+    }
+
+    .project2,
+    .project3,
+    .project4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "heading image"
+            "description description";
+        place-content: center;
+    }
+
+    .project1 img {
+        width: 70%;
+    }
+
+    .project2 img {
+        width: 60%;
+        grid-area: image;
+    }
+
+    .project3 img {
+        width: 50%;
+        grid-area: image;
+    }
+
+    .project4 img {
+        width: 50%;
+        grid-area: image;
+    }
+
+    .project-small p {
+        grid-area: description;
+    }
+
+    .project-small img {
+        align-self: center;
+    }
+
+    .project-small h3 {
+        align-self: center;
+    }
+
+    .project a {
+        font-size: 2rem;
+    }
+
+    .skills {
+        height: 20rem;
+    }
+
+    .skills-logos img {
+        width: 10rem;
+    }
+
+    form div {
+        display: flex;
+        align-items: center;
+    }
+
+    input {
+        width: 30rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    select {
+        width: 30rem;
+        height: 3rem;
+        font-size: 2rem;
+    }
+
+    textarea {
+        width: 67rem;
+        height: 20rem;
+    }
+
+    label {
+        font-size: 3rem;
+    }
+
+    footer p {
+        font-size: 1.5rem;
     }
 }
