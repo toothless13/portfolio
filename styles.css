@@ -272,3 +272,103 @@ footer p {
 .socials {
     margin-right: 0.5rem;
 }
+
+@media screen and (min-width:768px){
+    
+    .about-me img {
+        width: 20vw;
+    }
+
+    .project p {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .project1 img {
+        object-fit: cover;
+        object-position: top;
+        width: 80%;
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .dropdown {
+        display: none;
+    }
+
+    nav.desktop {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    nav ul {
+        margin: 0;
+        width: auto;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        width: 10vw;
+    }
+
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+        grid-template-areas: 
+            "heading heading"
+            "description image";
+    }
+
+    .about-me h2 {
+        grid-area: heading;
+    }
+
+    .about-me div {
+        grid-area: description;
+    }
+
+    .about-me img {
+        grid-area: image;
+    }
+
+    .projects {
+        display: grid;
+        column-gap: 4rem;
+        grid-template-areas:
+            "heading heading heading"
+            "project1 project1 project1"
+            "project2 project3 project4";
+    }
+
+    .projects h2 {
+        grid-area: heading;
+    }
+
+    .project1 {
+        grid-area: project1;
+    }
+
+    .project2 {
+        grid-area: project2;
+    }
+
+    .project3 {
+        grid-area: project3;
+    }
+
+    .project4 {
+        grid-area: project4;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
