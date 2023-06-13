@@ -372,3 +372,38 @@ footer p {
         text-align: center;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .projects a {
+        font-size: 1.5rem;
+    }
+
+    .project1 img {
+        width: 60%;
+    }
+
+    .skills-logos img {
+        width: 6rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
