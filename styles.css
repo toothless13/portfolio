@@ -219,7 +219,7 @@ h2 {
     transition: clip-path .5s ease-out;
 }
 
-h2:hover {
+.about-me:hover h2 {
     clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
 }
 
@@ -277,6 +277,10 @@ img {
     height: 8rem;
 }
 
+.projects:hover h2 {
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+}
+
 /* Skills section */
 .skills {
     grid-area: skills;
@@ -296,6 +300,11 @@ img {
     margin: 1rem;
     filter: drop-shadow(0.1rem 0.1rem 0.5rem var(--color3));
 }
+
+.skills:hover h2 {
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+}
+
 /* Contact section */
 .contact {
     grid-area: contact;
@@ -309,6 +318,11 @@ img {
     margin-top: 2rem;
     margin: 2rem 0;
 }
+
+.contact:hover h2 {
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+}
+
 /* Footer section */
 footer {
     grid-area: footer;
@@ -547,6 +561,15 @@ footer p {
     .project3 img,
     .project4 img {
         padding-top: 8rem;
+    }
+
+    .skills-logos img {
+        filter: none;
+        transition: filter 0.3s ease-in;
+    }
+
+    .skills-logos img:hover {
+        filter: drop-shadow(0.1rem 0.1rem 0.5rem var(--color3));
     }
 }
 
