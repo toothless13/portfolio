@@ -276,6 +276,7 @@ img {
     width: 100%;
     height: 8rem;
 }
+
 /* Skills section */
 .skills {
     grid-area: skills;
@@ -371,6 +372,12 @@ footer p {
     .project p {
         width: 80%;
         margin: 1rem auto;
+    }
+
+    .project > a {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
     }
 
     .project1 img {
@@ -493,7 +500,7 @@ footer p {
 
     .project2 {
         grid-area: project2;
-        clip-path: polygon(0% 3%, 100% 18%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 14%, 100% 100%, 0% 100%);
         background-color: var(--color2);
         border: none;
         border-radius: 0;
@@ -501,7 +508,7 @@ footer p {
 
     .project3 {
         grid-area: project3;
-        clip-path: polygon(0% 21%, 50% 28%, 100% 21%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 16.5%, 50% 23%, 100% 16.5%, 100% 100%, 0% 100%);
         background-color: var(--color2);
         border: none;
         border-radius: 0;
@@ -509,10 +516,16 @@ footer p {
 
     .project4 {
         grid-area: project4;
-        clip-path: polygon(0% 18%, 100% 0%, 100% 100%, 3% 100%);
+        clip-path: polygon(0% 14%, 100% 0%, 100% 100%, 0% 100%);
         background-color: var(--color2);
         border: none;
         border-radius: 0;
+    }
+
+    .project2,
+    .project3,
+    .project4 {
+        margin-top: -5rem;
     }
 
     /* .project1 img {
