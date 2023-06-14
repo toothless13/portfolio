@@ -29,6 +29,14 @@ a {
     color: var(--color4);
 }
 
+a:active {
+    color: var(--color3);
+}
+
+a:visited {
+    color: var(--color4);
+}
+
 /* Set initial grid */
 body {
     display: grid;
@@ -323,6 +331,21 @@ img {
     clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
 }
 
+button {
+    width: 30vw;
+    background-color: var(--color4);
+    border: 2px solid var(--color3);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    color: var(--color3);
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--color2);
+    cursor: pointer;
+}
+
 /* Footer section */
 footer {
     grid-area: footer;
@@ -416,6 +439,10 @@ footer p {
         padding-left: 1rem;
         display: block;
         width: 25%;
+    }
+
+    button {
+        width: 300px;
     }
 }
 
@@ -639,6 +666,10 @@ footer p {
         font-size: 1.25rem;
     }
 
+    button {
+        width: 300px;
+    }
+
     footer p {
         font-size: 1rem;
     }
@@ -803,6 +834,13 @@ footer p {
 
     label {
         font-size: 3rem;
+    }
+
+    button {
+        width: 400px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
     }
 
     footer {
