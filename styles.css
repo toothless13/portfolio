@@ -360,6 +360,12 @@ footer p {
         width: 80%;
         height: 10rem;
     }
+
+    .socials a {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        margin-right: 1.5rem;
+    }
 }
 
 /* 1000px */
@@ -476,6 +482,14 @@ footer p {
         text-align: center;
     }
 }
+
+/* 1150px */
+@media screen and (min-width: 1130px) {
+    .logo {
+        width: 80%;
+    }
+}
+
 /* Computer screen rules */
 @media screen and (min-width: 1440px) {
     
@@ -529,6 +543,18 @@ footer p {
 
     footer p {
         font-size: 1rem;
+    }
+
+    .socials a {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        margin-right: 3rem;
+        width: 10%;
+    }
+
+    .socials a img {
+        padding: 1rem;
+        width: 100%;
     }
 }
 /* Massive screen rules */
@@ -687,5 +713,17 @@ footer p {
 
     footer p {
         font-size: 1.5rem;
+    }
+
+    .socials a {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        margin-right: 5rem;
+        width: 15%;
+    }
+
+    .socials a img {
+        padding: 1rem;
+        width: 90%;
     }
 }
