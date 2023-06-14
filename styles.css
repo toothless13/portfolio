@@ -492,6 +492,14 @@ footer p {
 
 /* Computer screen rules */
 @media screen and (min-width: 1440px) {
+
+    .logo-link {
+        width: 20%;
+    }
+
+    .logo {
+        width: 70%;
+    }
     
     h2 {
         font-size: 2.5rem;
@@ -725,5 +733,17 @@ footer p {
     .socials a img {
         padding: 1rem;
         width: 90%;
+    }
+}
+
+
+/* Light mode */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color1: hsl(200, 6%, 80%);
+        --color2: hsl(178, 100%, 32%);
+        --color3: hsl(180, 4%, 18%);
+        --color4: hsl(315, 98%, 52%);
     }
 }
