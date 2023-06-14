@@ -204,6 +204,25 @@ h2 {
     /* animation: spin 16s linear infinite; */
 }
 
+h2 {
+    text-align: center;
+    width: 60vw;
+    margin: 1.5rem auto;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    background-color: var(--color2);
+    color: var(--color1);
+    box-shadow: 
+        0 0 .25rem .25rem var(--color2),
+        0 0 .75rem .75rem var(--color3);
+    /* filter: drop-shadow(0 0 .25rem var(--color2))
+            drop-shadow(0 0 .75rem var(--color3)); */
+    transition: clip-path .5s ease-out;
+}
+
+h2:hover {
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+}
+
 img {
     border-radius: 10px;
 }
@@ -445,7 +464,7 @@ footer p {
         grid-template-areas:
             "heading heading heading"
             "project1 project1 project1"
-            "project2 project3 project4";
+            "project2 project3 project4";        
     }
 
     .projects h2 {
@@ -454,18 +473,46 @@ footer p {
 
     .project1 {
         grid-area: project1;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+        background-color: var(--color2);
+        border: none;
+        border-radius: 0;
+    }
+
+    .project1 a {
+        padding-bottom: 2rem;
+        display: block;
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .project1 p:nth-child(5) {
+        margin-bottom: 0;
     }
 
     .project2 {
         grid-area: project2;
+        clip-path: polygon(0% 3%, 100% 18%, 100% 100%, 0% 100%);
+        background-color: var(--color2);
+        border: none;
+        border-radius: 0;
     }
 
     .project3 {
         grid-area: project3;
+        clip-path: polygon(0% 21%, 50% 28%, 100% 21%, 100% 100%, 0% 100%);
+        background-color: var(--color2);
+        border: none;
+        border-radius: 0;
     }
 
     .project4 {
         grid-area: project4;
+        clip-path: polygon(0% 18%, 100% 0%, 100% 100%, 3% 100%);
+        background-color: var(--color2);
+        border: none;
+        border-radius: 0;
     }
 
     /* .project1 img {
@@ -480,6 +527,13 @@ footer p {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        color: var(--color1);
+    }
+
+    .project2 img,
+    .project3 img,
+    .project4 img {
+        padding-top: 8rem;
     }
 }
 
