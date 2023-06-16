@@ -596,11 +596,15 @@ footer p {
 
     .skills-logos img {
         filter: none;
-        transition: filter 0.2s ease-in;
+        transform: scale(0.9);
+        transition: 
+            filter 0.2s ease-in,
+            transform 0.2s ease-in;
     }
 
     .skills-logos img:hover {
         filter: drop-shadow(0.1rem 0.1rem 1rem var(--color3));
+        transform: scale(1.2);
     }
 }
 
